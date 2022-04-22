@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weather_navigation"
+    app:startDestination="@id/nav_daily">
+
+    <fragment
+        android:id="@+id/nav_daily"
+        android:name="com.pedek.weatherapp.ui.DailyWeatherFragment"
+        android:label=""
+        tools:layout="@layout/fragment_daily_weather" >
+        <action
+            android:id="@+id/action_dailyWeatherFragment_to_weeklyWeatherReportFragment"
+            app:destination="@id/nav_weekly" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_weekly"
+        android:name="com.pedek.weatherapp.ui.WeeklyWeatherReportFragment"
+        android:label=""
+        tools:layout="@layout/fragment_weekly_weather_report" />
+</navigation>

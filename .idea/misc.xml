@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/User/AndroidStudioProjects/latest_iamalive/ThreeLineCardManagement/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.2105" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/latest_iamalive/ThreeLineCardManagement/app/src/main/res/drawable/ic_rain.xml" value="0.2105" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/latest_iamalive/ThreeLineCardManagement/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/latest_iamalive/ThreeLineCardManagement/app/src/main/res/layout/daily_report_temp.xml" value="0.2" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/latest_iamalive/ThreeLineCardManagement/app/src/main/res/layout/fragment_daily_weather.xml" value="0.25" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/latest_iamalive/ThreeLineCardManagement/app/src/main/res/layout/fragment_weekly_weather_report.xml" value="0.18" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/latest_iamalive/ThreeLineCardManagement/app/src/main/res/layout/weekly_items.xml" value="0.27960666951688756" />
+        <entry key="..\:/Users/User/AndroidStudioProjects/latest_iamalive/ThreeLineCardManagement/app/src/main/res/menu/bottom_nav_menu.xml" value="0.23697916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
