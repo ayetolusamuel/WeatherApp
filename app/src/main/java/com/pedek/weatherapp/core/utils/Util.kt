@@ -10,6 +10,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.pedek.weatherapp.model.ErrorMessage
 import okhttp3.ResponseBody
+import java.text.ParseException
 import java.text.SimpleDateFormat
 
 fun Activity.isInternetAvailable(): Boolean {
@@ -55,8 +56,20 @@ fun handleErrorMessage(res: ResponseBody): ErrorMessage {
 }
 
 @SuppressLint("SimpleDateFormat")
-fun convertLongDateToWord(longDate:Long):String{
+fun convertLongDateToWord(longDate: Long): String {
     val spf = SimpleDateFormat("EEE, MMM yyyy  ")
     return spf.format(longDate)
 
+}
+
+@SuppressLint("SimpleDateFormat")
+fun convertStringDateToReturnDay(dateString: String): String {
+    val fromUser = SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+    val myFormat = SimpleDateFormat("EEE")
+    try {
+        return myFormat.format(fromUser.parse(dateString))
+    } catch (e: ParseException) {
+        e.printStackTrace()
+        return ""
+    }
 }

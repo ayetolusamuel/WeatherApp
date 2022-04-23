@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.pedek.weatherapp.R
+import com.pedek.weatherapp.core.utils.convertStringDateToReturnDay
 import com.pedek.weatherapp.databinding.WeeklyItemsBinding
 import com.pedek.weatherapp.model.response.WeatherData
 
@@ -40,7 +41,7 @@ class WeatherAdapter(
 
             item.description.text = weatherData.description
             item.temp.text = "${weatherData.temp_max}℃/${weatherData.temp_min}℃"
-            item.day.text = weatherData.date.substring(0,10)
+            item.day.text = convertStringDateToReturnDay(weatherData.date)
         }
     }
 }
